@@ -90,5 +90,7 @@ function getDetailView(e) {
 		
 	}, function(error) {
 		console.log('Failed fetching stats data: ' + error);
+		var errorScreen = new UI.Card({ title: 'Error', subtitle: 'Loading statistics fail :(' });
+		errorScreen.show();
 	});
 }
